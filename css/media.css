@@ -1,0 +1,95 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	body {
+		margin: 0;
+	}
+	.content {
+		padding-top: 70px;
+	}
+	header {
+		padding: 24px 0 8px;
+		left: 100%;
+		transition: 0.45s left ease;
+	}
+	header.visible {
+		left: 0;
+	}
+	.nav.nav-right .header-link {
+		margin-right: 10px;
+	}
+	.nav .header-link {
+		margin-right: 10px;
+	}
+	.nav {
+		display: block;
+		height: auto;
+		padding-left: 0;
+	}
+	.nav .header-link {
+		line-height: normal;
+		padding: 16px 0;
+		margin: 0;
+	}
+	.nav .header-link.active:before {
+		display: none;
+	}
+	.header-search {
+		width: calc(100% - 116px);
+	}
+	.theme {
+		margin: 0;
+		top: 0;
+		right: 72px;
+	}
+	.theme.mobile {
+		display: block;
+	}
+	.header-container {
+		position: relative;
+	}
+	.header-container-mobile {
+		position: fixed;
+		margin: auto;
+		left: 0;
+		right: 0;
+		z-index: 2;
+	}
+	.btn-mobile-menu {
+		display: block;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	main {
+		padding-top: 40px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	.main-title {
+		font-size: 32px;
+	}
+	.header-search input::-webkit-input-placeholder {
+		font-size: 13px;
+	}
+	.header-search input::-moz-placeholder {
+		font-size: 13px;
+	}
+	.header-search input:-ms-input-placeholder {
+		font-size: 13px;
+	}
+	.header-search input:-moz-placeholder {
+		font-size: 13px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-title {
+		font-size: 20px;
+	}
+}
